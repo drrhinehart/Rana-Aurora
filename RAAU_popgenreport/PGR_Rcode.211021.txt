@@ -1,0 +1,10 @@
+## Simple RAAU analysis in popgenreport
+## R code
+
+library(PopGenReport)
+gen <- read.genepop("RAAU190223-poppr_ds1.gen", ncode=3)
+popgenreport(gen, mk.differ.stats=TRUE, mk.pdf=FALSE, path.pgr=getwd())
+
+
+## Calcs Jost's D, Gst.Nei, Gst.Hedricks.
+## See here for discussion: https://www.molecularecologist.com/2011/03/02/should-i-use-fst-gst-or-d-2/
